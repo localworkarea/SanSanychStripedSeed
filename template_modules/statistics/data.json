@@ -1,0 +1,30 @@
+{
+  "statistics": {
+    "sessions": [
+      {
+        "date": "08.09.2025",
+        "start": 1757328126550,
+        "end": 1757328262623
+      },
+      {
+        "date": "08.09.2025",
+        "start": 1757328268220,
+        "end": 1757359699942
+      },
+      {
+        "date": "09.09.2025",
+        "start": 1757404680267,
+        "end": 1757420493313,
+        "type": "build"
+      }
+    ],
+    "files": [
+      "settings.scss",
+      "home.html",
+      "home.scss",
+      "fullpage.scss",
+      "style.scss",
+      "banner-1.svg"
+    ]
+  }
+}
