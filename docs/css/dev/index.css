@@ -314,6 +314,7 @@ body {
 }
 .section-1__banner-top {
   position: absolute;
+  z-index: 1;
   max-width: 56.6875rem;
 }
 .section-1__banner-top svg {
@@ -914,7 +915,6 @@ body {
     width: 45vw;
   }
   .section-1__banner-top {
-    z-index: 3;
     top: 50%;
     right: 0;
     transform: translate(-9%, -57%);
@@ -944,7 +944,6 @@ body {
     width: 60vw;
   }
   .section-1__banner-top {
-    z-index: 1;
     top: 0;
     left: 50%;
     transform: translate(-62%, 0%);

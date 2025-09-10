@@ -167,6 +167,7 @@
   // .section-1__banner-top
   &__banner-top {
     position: absolute;
+    z-index: 1;
     max-width: 907px;
 
     @media (min-width:toEm(1350.98)) and (max-height: toEm(760.98)) {
@@ -174,7 +175,6 @@
     }
 
     @media (orientation: landscape) {
-      z-index: 3;
       top: 50%;
       right: 0;
       transform: translate(-9%, -57%);
@@ -182,7 +182,6 @@
     }
 
     @media (orientation: portrait) {
-      z-index: 1;
       top: 0;
       left: 50%;
       transform: translate(-62%, 0%);
