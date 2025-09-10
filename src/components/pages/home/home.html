@@ -19,7 +19,7 @@
 					<picture>
 						<source srcset="@img/sanych-pc.png" media="(min-width: 30.062em)" type="image/webp">
 						<source srcset="@img/sanych-mb.png" type="image/webp">
-						<img class="ibg"fetchpriority="high" src="@img/sanych-pc.png" width="934" height="996" alt="Сан Санич у синьому піджаку посміхаючись закручує свої вуса">
+						<img class="ibg" fetchpriority="high" src="@img/sanych-pc.png" width="934" height="996" alt="Сан Санич у синьому піджаку посміхаючись закручує свої вуса">
 					</picture>
 				</div>
 				<div class="section-1__banner-top">
@@ -93,12 +93,12 @@
 			</div>
 		</div>
 	</section>
-	<section data-fls-fullpage-section class="section section-2">
+	<section data-fls-fullpage-section class="section section-2" style="visibility: hidden;">
 		<div class="section-wrapper section-2__wrapper">
 			<div class="section-2__container">
 				<div class="section-2__body">
 					<div class="section-2__seed">
-						<img class="ibg" src="@img/seed.png" width="182" height="204" alt="смугасте насіння сонячника">
+						<img class="ibg" loading="lazy" src="@img/seed.png" width="182" height="204" alt="смугасте насіння сонячника">
 					</div>
 					<h2 class="section-2__title">
 						У Сан Санича новинка — ВЕЛИЧЕЗНЕ смугасте насіння!
@@ -107,14 +107,14 @@
 						<picture>
 							<source srcset="@img/cat/cat-pc.png" media="(min-width: 30.062em)" type="image/webp">
 							<source srcset="@img/cat/cat-mb.png" type="image/webp">
-							<img class="ibg"  src="@img/cat/cat-pc.png" width="617" height="532" alt="Веселий рудий кіт що танцює на поляні">
+							<img class="ibg" loading="lazy" src="@img/cat/cat-pc.png" width="617" height="532" alt="Веселий рудий кіт що танцює на поляні">
 						</picture>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section data-fls-fullpage-section class="section section-3">
+	<section data-fls-fullpage-section class="section section-3" style="visibility: hidden;">
 		<div class="section-wrapper section-3__wrapper">
 			<div class="section-3__container">
 				<div class="section-3__body">
@@ -122,27 +122,58 @@
 						<picture>
 							<source srcset="@img/packs/pack-1-big-pc.png" media="(min-width: 30.062em)" type="image/webp">
 							<source srcset="@img/packs/pack-1-mb.png" type="image/webp">
-							<img class="ibg" src="@img/packs/pack-1-big-pc.png" width="369" height="446" alt="пачка сонячного насіння">
+							<img class="ibg" loading="lazy" src="@img/packs/pack-1-big-pc.png" width="369" height="446" alt="пачка сонячного насіння">
 						</picture>
 					</div>
 					<div class="section-3__pack section-3__pack--2">
 						<picture>
 							<source srcset="@img/packs/pack-2-big-pc.png" media="(min-width: 30.062em)" type="image/webp">
 							<source srcset="@img/packs/pack-2-mb.png" type="image/webp">
-							<img class="ibg" src="@img/packs/pack-2-big-pc.png" width="369" height="446" alt="пачка сонячного насіння">
+							<img class="ibg" loading="lazy" src="@img/packs/pack-2-big-pc.png" width="369" height="446" alt="пачка сонячного насіння">
 						</picture>
 					</div>
 					<div class="section-3__head">
 						<h2 class="section-3__title">Скуштуй смугасте смажене та смугасте солоне насіння</h2>
 						<div class="section-3__cat">
-							<img class="ibg" src="@img/cat/cat-2.png" width="389" height="355" alt="Веселий рудий кіт що танцює на поляні">
+							<img class="ibg" loading="lazy" src="@img/cat/cat-2.png" width="389" height="355" alt="Веселий рудий кіт що танцює на поляні">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section data-fls-fullpage-section class="section section-4">
-		<div class="section-wrapper"></div>
+	<section data-fls-fullpage-section class="section section-4" style="visibility: hidden;">
+		<div class="section-wrapper section-4__wrapper">
+			<div class="section-4__container">
+				<div class="section-4__body">
+					<div data-fls-videobutton class="video-youtube__body">
+						<button class="video-youtube__button" type="button" data-youtube="xuO0Bn1yaUw" aria-label="кнопка відкриття відео з youtube">
+							<picture>
+								<source srcset="@img/poster/poster-pc.jpg" media="(min-width: 30.062em)" type="image/webp">
+								<source srcset="@img/poster/poster-mb.jpg" type="image/webp">
+								<img class="ibg" loading="lazy" src="@img/poster/poster-pc.jpg" width="784" height="400" alt="poster video">
+							</picture>
+						</button>
+					</div>
+				</div>
+				<div class="section-4__footer">
+					<p class="section-4__cto">Доєднуйся до нашої спільноти</p>
+					<span></span>
+					<div class="section-4__social">
+						<a href="#" class="section-4__link" aria-label="посилання на соціальну мережу">
+							<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M48 20C48 15.5817 44.4183 12 40 12H20C15.5817 12 12 15.5817 12 20V40C12 44.4183 15.5817 48 20 48H40C44.4183 48 48 44.4183 48 40V20ZM52 40C52 46.6274 46.6274 52 40 52H20C13.3726 52 8 46.6274 8 40V20C8 13.3726 13.3726 8 20 8H40C46.6274 8 52 13.3726 52 20V40Z"
+									fill="white" />
+								<path
+									d="M37.5 30C37.5 25.8579 34.1421 22.5 30 22.5C25.8579 22.5 22.5 25.8579 22.5 30C22.5 34.1421 25.8579 37.5 30 37.5C34.1421 37.5 37.5 34.1421 37.5 30ZM41.5 30C41.5 36.3513 36.3513 41.5 30 41.5C23.6487 41.5 18.5 36.3513 18.5 30C18.5 23.6487 23.6487 18.5 30 18.5C36.3513 18.5 41.5 23.6487 41.5 30Z"
+									fill="white" />
+								<path d="M42 21C43.6569 21 45 19.6569 45 18C45 16.3431 43.6569 15 42 15C40.3431 15 39 16.3431 39 18C39 19.6569 40.3431 21 42 21Z" fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </main>

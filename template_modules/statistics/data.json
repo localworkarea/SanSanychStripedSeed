@@ -16,6 +16,17 @@
         "start": 1757404680267,
         "end": 1757420493313,
         "type": "build"
+      },
+      {
+        "date": "09.09.2025",
+        "start": 1757420742539,
+        "end": 1757421741305
+      },
+      {
+        "date": "10.09.2025",
+        "start": 1757514851916,
+        "end": 1757521545774,
+        "type": "build"
       }
     ],
     "files": [
@@ -24,7 +35,11 @@
       "home.scss",
       "fullpage.scss",
       "style.scss",
-      "banner-1.svg"
+      "banner-1.svg",
+      "app.js",
+      "videobutton.html",
+      "videobutton.scss",
+      "videobutton.js"
     ]
   }
 }

@@ -15,7 +15,7 @@ body {
 	color: $mainColor;
 	font-family: $fontFamily;
 	font-size: #{$fontSize}px;
-
+	background-color: $mainColor;
 	// Скролл заблоковано
 	[data-fls-scrolllock] & {
 		overflow: hidden;

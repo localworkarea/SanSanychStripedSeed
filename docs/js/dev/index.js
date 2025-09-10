@@ -27,6 +27,24 @@
     fetch(link.href, fetchOpts);
   }
 })();
+const videoYoutubeButtons = document.querySelectorAll(".video-youtube__button");
+videoYoutubeButtons.forEach((button) => {
+  button.addEventListener("click", function() {
+    const youTubeCode = this.getAttribute("data-youtube");
+    let urlVideo = `https://www.youtube.com/embed/${youTubeCode}?rel=0&showinfo=0`;
+    const iframe = document.createElement("iframe");
+    iframe.setAttribute("allowfullscreen", "");
+    {
+      urlVideo += "&autoplay=1";
+      iframe.setAttribute("allow", "autoplay; encrypted-media");
+    }
+    iframe.setAttribute("src", urlVideo);
+    const body = this.closest(".video-youtube__body");
+    body.innerHTML = "";
+    body.appendChild(iframe);
+    body.classList.add("video-added");
+  });
+});
 const isMobile = { Android: function() {
   return navigator.userAgent.match(/Android/i);
 }, BlackBerry: function() {
@@ -40,6 +58,15 @@ const isMobile = { Android: function() {
 }, any: function() {
   return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
 } };
+function addLoadedAttr() {
+  if (!document.documentElement.hasAttribute("data-fls-preloader-loading")) {
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.documentElement.setAttribute("data-fls-loaded", "");
+      }, 0);
+    });
+  }
+}
 class FullPage {
   constructor(element, options) {
     let config = {
@@ -543,3 +570,4 @@ class FullPage {
 if (document.querySelector("[data-fls-fullpage]")) {
   window.addEventListener("load", () => window.flsFullpage = new FullPage(document.querySelector("[data-fls-fullpage]")));
 }
+addLoadedAttr();
