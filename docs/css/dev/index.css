@@ -738,7 +738,7 @@ body {
 }
 @media (min-width: 68.81125em) and (max-height: 46.93625em) {
   .section-1__container {
-    scale: 0.75;
+    scale: 0.8;
   }
   .section-1__container .section-1__sanych {
     transform: translate(9%, 20%);
